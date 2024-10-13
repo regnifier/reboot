@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
             R.navigation.nav_graph,
             null
         )
+        // TODO Ask for permission to notify
     }
 
     override fun onDestroy() {

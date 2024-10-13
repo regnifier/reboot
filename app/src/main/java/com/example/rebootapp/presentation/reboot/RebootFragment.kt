@@ -15,6 +15,6 @@ class RebootFragment : BaseFragment<FragmentRebootBinding, RebootViewModel>() {
 
 
     override fun initView() {
-      //Add recycler view list
+      // TODO Add recycler view list
     }
 }
