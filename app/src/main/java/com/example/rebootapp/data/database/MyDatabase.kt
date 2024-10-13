@@ -6,7 +6,7 @@ import com.example.rebootapp.data.model.RebootEntity
 
 const val MY_DATA_BASE = "my-database"
 
-@Database(entities = [RebootEntity::class], version = 2)
+@Database(entities = [RebootEntity::class], version = 1)
 abstract class MyDatabase : RoomDatabase() {
     abstract fun getRebootDao(): RebootDao
 }
