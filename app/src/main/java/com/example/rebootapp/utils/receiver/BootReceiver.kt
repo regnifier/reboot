@@ -13,6 +13,7 @@ import com.example.rebootapp.domain.model.RebootInfo
 import com.example.rebootapp.utils.localDateToString
 import com.example.rebootapp.utils.service.RebootService
 import java.time.LocalDate
+import java.time.LocalDateTime
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -31,7 +32,7 @@ class BootReceiver : BroadcastReceiver() {
                 rebootRepository.saveRebootInfo(
                     rebootInfo = RebootInfo(
                         count = 1,
-                        date = LocalDate.now().localDateToString()
+                        date = LocalDateTime.now().localDateToString()
                     )
                 )
             }

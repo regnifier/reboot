@@ -14,6 +14,7 @@ import com.example.rebootapp.utils.isToday
 import com.example.rebootapp.utils.localDateToString
 import com.example.rebootapp.utils.receiver.JOB_ID
 import java.time.LocalDate
+import java.time.LocalDateTime
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -34,7 +35,7 @@ class RebootService : JobService() {
             }
             sendNotification(
                 context = applicationContext,
-                currentDate = rebootInfo?.date ?: LocalDate.now().localDateToString(),
+                currentDate = rebootInfo?.date ?: LocalDateTime.now().localDateToString(),
                 rebootCount = rebootInfo?.count ?: 0
             )
         }
